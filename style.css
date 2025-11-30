@@ -1,0 +1,176 @@
+/* ------------------------------
+   GLOBAL STYLES (Dark Glass UI)
+------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0a0f1a, #0d1b2a, #1b263b);
+    color: #e8f1ff;
+    overflow-x: hidden;
+}
+
+/* ------------------------------
+   NAVBAR (Water Glass Transparent)
+------------------------------ */
+.navbar {
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* Water glass effect */
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #b8dfff;  /* soft neon blue */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #cfe4ff;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4da6ff;
+}
+
+/* ------------------------------
+   HERO SECTION
+------------------------------ */
+.hero {
+    text-align: center;
+    padding: 180px 20px 120px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: 700;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.2;
+    color: #d8e9ff;
+}
+
+.hero p {
+    margin: 20px auto;
+    max-width: 700px;
+    font-size: 18px;
+    opacity: 0.85;
+}
+
+.cta-btn {
+    margin-top: 25px;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    border: none;
+    background: rgba(77, 166, 255, 0.9);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: rgba(77, 166, 255, 1);
+    transform: translateY(-3px);
+}
+
+/* ------------------------------
+   FEATURES SECTION (Glass Cards)
+------------------------------ */
+.features {
+    padding: 100px 40px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: #d1e8ff;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.45);
+    transition: 0.3s;
+    color: #eaf2ff;
+}
+
+.glass-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* ------------------------------
+   HOW IT WORKS SECTION
+------------------------------ */
+.how-it-works {
+    padding: 100px 40px;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.glass-step {
+    width: 300px;
+    padding: 30px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 4px 25px rgba(0,0,0,0.5);
+    transition: 0.3s;
+    color: #e8f4ff;
+}
+
+.glass-step:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+}
